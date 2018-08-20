@@ -4,4 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:gravity="center"
+            android:src="@drawable/logodta"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/main_img" />
+        <TextView
+            android:text="DTAction"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_titre"
+            android:gravity="center_horizontal"
+            android:freezesText="false" />
+        <Button
+            android:text="Inscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_inscription" />
+        <Button
+            android:text="Connexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_connexion" />
+    </LinearLayout>
 </RelativeLayout>
