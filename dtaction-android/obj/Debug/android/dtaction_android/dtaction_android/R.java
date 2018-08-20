@@ -2993,7 +2993,6 @@ containing a value of this type.
         public static final int clip_horizontal=0x7f08004e;
         public static final int clip_vertical=0x7f08004f;
         public static final int collapseActionView=0x7f080039;
-        public static final int conn_submit=0x7f08008e;
         public static final int container=0x7f08009b;
         public static final int contentPanel=0x7f080066;
         public static final int coordinator=0x7f08009c;
@@ -3038,6 +3037,7 @@ containing a value of this type.
         public static final int list_item=0x7f080061;
         public static final int log_login=0x7f08008c;
         public static final int log_psw=0x7f08008d;
+        public static final int log_submit=0x7f08008e;
         public static final int log_title=0x7f08008b;
         public static final int main_img=0x7f08008f;
         public static final int main_login=0x7f080092;

@@ -25,5 +25,5 @@
         android:text="Submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/conn_submit" />
+        android:id="@+id/log_submit" />
 </LinearLayout>

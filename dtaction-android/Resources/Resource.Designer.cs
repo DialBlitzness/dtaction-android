@@ -2465,9 +2465,6 @@ namespace dtaction_android
 			// aapt resource value: 0x7f080039
 			public const int collapseActionView = 2131230777;
 			
-			// aapt resource value: 0x7f08008e
-			public const int conn_submit = 2131230862;
-			
 			// aapt resource value: 0x7f08009b
 			public const int container = 2131230875;
 			
@@ -2599,6 +2596,9 @@ namespace dtaction_android
 			
 			// aapt resource value: 0x7f08008d
 			public const int log_psw = 2131230861;
+			
+			// aapt resource value: 0x7f08008e
+			public const int log_submit = 2131230862;
 			
 			// aapt resource value: 0x7f08008b
 			public const int log_title = 2131230859;

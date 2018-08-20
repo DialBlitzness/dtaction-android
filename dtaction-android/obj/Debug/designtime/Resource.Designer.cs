@@ -24,6 +24,10 @@ namespace dtaction_android
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
+		public static void UpdateIdValues()
+		{
+		}
+		
 		public partial class Animation
 		{
 			
@@ -2401,9 +2405,6 @@ namespace dtaction_android
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
 			
-			// aapt resource value: 0x7F020005
-			public const int conn_submit = 2130837509;
-			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
 			
@@ -2511,6 +2512,9 @@ namespace dtaction_android
 			
 			// aapt resource value: 0x7F020004
 			public const int log_psw = 2130837508;
+			
+			// aapt resource value: 0x7F020005
+			public const int log_submit = 2130837509;
 			
 			// aapt resource value: 0x7F020002
 			public const int log_title = 2130837506;
