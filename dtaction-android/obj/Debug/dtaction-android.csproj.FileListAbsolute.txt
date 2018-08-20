@@ -1,0 +1,2 @@
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.csprojAssemblyReference.cache
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.csproj.CoreCompileInputs.cache
