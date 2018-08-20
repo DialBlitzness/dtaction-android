@@ -59,9 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Modele\Liste.cs" />
-    <Compile Include="Modele\Tache.cs" />
-    <Compile Include="Modele\User.cs" />
+    <Compile Include="Model\Liste.cs" />
+    <Compile Include="Model\Tache.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
