@@ -24,10 +24,6 @@ namespace dtaction_android
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
-		public static void UpdateIdValues()
-		{
-		}
-		
 		public partial class Animation
 		{
 			
@@ -2251,6 +2247,9 @@ namespace dtaction_android
 			// aapt resource value: 0x7F010002
 			public const int logodta = 2130771970;
 			
+			// aapt resource value: 0x7F010003
+			public const int logodtq = 2130771971;
+			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
 			
@@ -2402,6 +2401,9 @@ namespace dtaction_android
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
 			
+			// aapt resource value: 0x7F020005
+			public const int conn_submit = 2130837509;
+			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
 			
@@ -2504,17 +2506,26 @@ namespace dtaction_android
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
 			
-			// aapt resource value: 0x7F020005
-			public const int main_connexion = 2130837509;
-			
-			// aapt resource value: 0x7F020002
-			public const int main_img = 2130837506;
+			// aapt resource value: 0x7F020003
+			public const int log_login = 2130837507;
 			
 			// aapt resource value: 0x7F020004
-			public const int main_inscription = 2130837508;
+			public const int log_psw = 2130837508;
 			
-			// aapt resource value: 0x7F020003
-			public const int main_titre = 2130837507;
+			// aapt resource value: 0x7F020002
+			public const int log_title = 2130837506;
+			
+			// aapt resource value: 0x7F020006
+			public const int main_img = 2130837510;
+			
+			// aapt resource value: 0x7F020009
+			public const int main_login = 2130837513;
+			
+			// aapt resource value: 0x7F020008
+			public const int main_subscribe = 2130837512;
+			
+			// aapt resource value: 0x7F020007
+			public const int main_title = 2130837511;
 			
 			// aapt resource value: 0x7F0C0042
 			public const int masked = 2131492930;
@@ -2674,6 +2685,24 @@ namespace dtaction_android
 			
 			// aapt resource value: 0x7F0C0076
 			public const int submit_area = 2131492982;
+			
+			// aapt resource value: 0x7F020015
+			public const int sub_ = 2130837525;
+			
+			// aapt resource value: 0x7F020012
+			public const int sub_email = 2130837522;
+			
+			// aapt resource value: 0x7F020013
+			public const int sub_psw = 2130837523;
+			
+			// aapt resource value: 0x7F020010
+			public const int sub_title = 2130837520;
+			
+			// aapt resource value: 0x7F020011
+			public const int sub_username = 2130837521;
+			
+			// aapt resource value: 0x7F020014
+			public const int sub_verif = 2130837524;
 			
 			// aapt resource value: 0x7F0C0077
 			public const int tabMode = 2131492983;
@@ -2888,7 +2917,13 @@ namespace dtaction_android
 			public const int abc_select_dialog_material = 2131689498;
 			
 			// aapt resource value: 0x7F030002
-			public const int activity_main = 2130903042;
+			public const int activity_login = 2130903042;
+			
+			// aapt resource value: 0x7F030003
+			public const int activity_main = 2130903043;
+			
+			// aapt resource value: 0x7F030004
+			public const int activity_subscribe = 2130903044;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;

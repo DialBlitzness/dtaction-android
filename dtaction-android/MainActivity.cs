@@ -16,15 +16,15 @@ namespace dtaction_android
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            Button connexion = FindViewById<Button>(Resource.Id.main_connexion);
-            Button inscription = FindViewById<Button>(Resource.Id.main_inscription);
+            Button login = FindViewById<Button>(Resource.Id.main_login);
+            Button subscribe = FindViewById<Button>(Resource.Id.main_subscribe);
 
-            connexion.Click += delegate {
-                StartActivity(new Intent(this, typeof(ConnexionActivity)));
+            login.Click += delegate {
+                StartActivity(new Intent(this, typeof(LoginActivity)));
             };
 
-            inscription.Click += delegate {
-                StartActivity(new Intent(this, typeof(InscriptionActivity)));
+            subscribe.Click += delegate {
+                StartActivity(new Intent(this, typeof(SubscribeActivity)));
             };
         }
     }

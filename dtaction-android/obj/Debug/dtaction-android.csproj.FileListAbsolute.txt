@@ -1,9 +1,8 @@
-C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.csprojAssemblyReference.cache
-C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.csproj.CoreCompileInputs.cache
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.dll
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction_android.dtaction_android.apk
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction_android.dtaction_android-Signed.apk
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.csproj.CoreCompileInputs.cache
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.dll
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\bin\dtaction_android.dtaction_android.apk
@@ -29,6 +28,10 @@ C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\mipmap-xx
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\mipmap-xxxhdpi\ic_launcher.png
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\mipmap-xxxhdpi\ic_launcher_foreground.png
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\mipmap-xxxhdpi\ic_launcher_round.png
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\drawable\logodta.png
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\drawable\logodtq.png
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\layout\activity_login.xml
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\layout\activity_subscribe.xml
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\R.cs.flag
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\R.txt
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\uploadflags.txt
@@ -53,6 +56,6 @@ C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\Syste
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\Mono.Security.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\dtaction-android.dll.mdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.csprojAssemblyReference.cache
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.dll.mdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\dtaction-android.dll.mdb
-C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\drawable\logodta.png
