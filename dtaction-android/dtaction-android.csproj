@@ -59,10 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LoginActivity.cs" />
+    <Compile Include="ProjectActivity.cs" />
+    <Compile Include="Repository\localStorage.cs" />
     <Compile Include="SubscribeActivity.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Model\Liste.cs" />
-    <Compile Include="Model\Tache.cs" />
+    <Compile Include="Model\SingleList.cs" />
+    <Compile Include="Model\Task.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,6 +116,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_subscribe.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_project.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

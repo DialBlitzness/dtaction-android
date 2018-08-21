@@ -21,10 +21,12 @@ namespace dtaction_android
 
             login.Click += delegate {
                 StartActivity(new Intent(this, typeof(LoginActivity)));
+                Finish();
             };
 
             subscribe.Click += delegate {
                 StartActivity(new Intent(this, typeof(SubscribeActivity)));
+                Finish();
             };
         }
     }

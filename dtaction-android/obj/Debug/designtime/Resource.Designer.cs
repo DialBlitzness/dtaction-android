@@ -24,10 +24,6 @@ namespace dtaction_android
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
-		public static void UpdateIdValues()
-		{
-		}
-		
 		public partial class Animation
 		{
 			
@@ -2690,23 +2686,23 @@ namespace dtaction_android
 			// aapt resource value: 0x7F0C0076
 			public const int submit_area = 2131492982;
 			
-			// aapt resource value: 0x7F020015
-			public const int sub_ = 2130837525;
-			
-			// aapt resource value: 0x7F020012
-			public const int sub_email = 2130837522;
-			
 			// aapt resource value: 0x7F020013
-			public const int sub_psw = 2130837523;
-			
-			// aapt resource value: 0x7F020010
-			public const int sub_title = 2130837520;
-			
-			// aapt resource value: 0x7F020011
-			public const int sub_username = 2130837521;
+			public const int sub_email = 2130837523;
 			
 			// aapt resource value: 0x7F020014
-			public const int sub_verif = 2130837524;
+			public const int sub_psw = 2130837524;
+			
+			// aapt resource value: 0x7F020016
+			public const int sub_subscribe = 2130837526;
+			
+			// aapt resource value: 0x7F020011
+			public const int sub_title = 2130837521;
+			
+			// aapt resource value: 0x7F020012
+			public const int sub_username = 2130837522;
+			
+			// aapt resource value: 0x7F020015
+			public const int sub_verif = 2130837525;
 			
 			// aapt resource value: 0x7F0C0077
 			public const int tabMode = 2131492983;
@@ -2731,6 +2727,9 @@ namespace dtaction_android
 			
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
+			
+			// aapt resource value: 0x7F020010
+			public const int textView1 = 2130837520;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
@@ -2927,7 +2926,10 @@ namespace dtaction_android
 			public const int activity_main = 2130903043;
 			
 			// aapt resource value: 0x7F030004
-			public const int activity_subscribe = 2130903044;
+			public const int activity_project = 2130903044;
+			
+			// aapt resource value: 0x7F030005
+			public const int activity_subscribe = 2130903045;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;

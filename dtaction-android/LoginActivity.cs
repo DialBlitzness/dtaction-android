@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using dtaction_android.Model;
+using dtaction_android.Repository;
 
 namespace dtaction_android
 {
@@ -26,18 +28,21 @@ namespace dtaction_android
             EditText login = FindViewById<EditText>(Resource.Id.log_login);
             EditText password = FindViewById<EditText>(Resource.Id.log_psw);
 
-            // Il faut récupérer les users. User en dur :
-            string testlogin = "Test";
-            string testpassword = "Test";
-
             submit.Click += delegate {
-                if((login.Text == testlogin) && (password.Text == testpassword))
+                var usr = localStorage.FindByLoginPsw(login.Text, password.Text);
+                if (usr != null)
                 {
-                    // Ca marche !!
+                    Toast.MakeText(this, "Login successful, "+usr.Pseudo, ToastLength.Short).Show();
+                    StartActivity(new Intent(this, typeof(ProjectActivity)));
+                    Finish();
                 }
                 else
                 {
-                    // Ca marche pas
+                    AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                    alert.SetTitle("Login fail");
+                    alert.SetMessage("Login or password doesn't exist.");
+                    Dialog dialog = alert.Create();
+                    dialog.Show();
                 }
             };
         }

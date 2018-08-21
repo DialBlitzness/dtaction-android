@@ -12,18 +12,18 @@ using Android.Widget;
 
 namespace dtaction_android.Model
 {
-    class User
+    public class User
     {
-        int Id { get; set; }
-        string Pseudo { get; set; }
-        string Email { get; set; }
-        string Mdp { get; set; }
-        string Url { get; set; }
-        List<Liste> Listes { get; set; }
+        public int Id { get; set; }
+        public string Pseudo { get; set; }
+        public string Email { get; set; }
+        public string Psw { get; set; }
+        public string Url { get; set; }
+        public List<SingleList> Lists { get; set; }
 
         public User()
         {
-            Listes = new List<Liste>();
+            Lists = new List<SingleList>();
         }
     }
 }

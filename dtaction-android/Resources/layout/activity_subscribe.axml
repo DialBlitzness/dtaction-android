@@ -35,5 +35,5 @@
         android:text="Submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sub_" />
+        android:id="@+id/sub_subscribe" />
 </LinearLayout>
