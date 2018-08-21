@@ -3101,9 +3101,9 @@ containing a value of this type.
         public static int src_over=0x7f08002c;
         public static int start=0x7f08004b;
         public static int status_bar_latest_event_content=0x7f0800ad;
-        public static int sub_=0x7f080099;
         public static int sub_email=0x7f080096;
         public static int sub_psw=0x7f080097;
+        public static int sub_submit=0x7f080099;
         public static int sub_title=0x7f080094;
         public static int sub_username=0x7f080095;
         public static int sub_verif=0x7f080098;

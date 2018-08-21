@@ -3103,7 +3103,7 @@ containing a value of this type.
         public static final int status_bar_latest_event_content=0x7f0800ad;
         public static final int sub_email=0x7f080096;
         public static final int sub_psw=0x7f080097;
-        public static final int sub_subscribe=0x7f080099;
+        public static final int sub_submit=0x7f080099;
         public static final int sub_title=0x7f080094;
         public static final int sub_username=0x7f080095;
         public static final int sub_verif=0x7f080098;

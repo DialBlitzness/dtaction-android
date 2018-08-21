@@ -7,8 +7,11 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
+using dtaction_android.Model;
+using dtaction_android.Repository;
 
 namespace dtaction_android
 {
@@ -23,31 +26,37 @@ namespace dtaction_android
             SetContentView(Resource.Layout.activity_subscribe);
 
             Button submit = FindViewById<Button>(Resource.Id.sub_submit);
-
-
-
-
-
-            Button submit = FindViewById<Button>(Resource.Id.log_submit);
-            EditText login = FindViewById<EditText>(Resource.Id.log_login);
-            EditText password = FindViewById<EditText>(Resource.Id.log_psw);
+            EditText username = FindViewById<EditText>(Resource.Id.sub_username);
+            EditText email = FindViewById<EditText>(Resource.Id.sub_email);
+            EditText psw = FindViewById<EditText>(Resource.Id.sub_psw);
+            EditText verif = FindViewById<EditText>(Resource.Id.sub_verif);
 
             submit.Click += delegate {
-                var usr = localStorage.FindByLoginPsw(login.Text, password.Text);
-                if (usr != null)
+                if (username.Text == null || username.Text == "")
                 {
-                    Toast.MakeText(this, "Login successful, " + usr.Pseudo, ToastLength.Short).Show();
-                    StartActivity(new Intent(this, typeof(ProjectActivity)));
-                    Finish();
+                    Toast.MakeText(this, "Username is required !", ToastLength.Short).Show();
+                    return;
                 }
-                else
+                if (email.Text == null || email.Text == "" || !(Patterns.EmailAddress.Matcher(email.Text).Matches()))
                 {
-                    AlertDialog.Builder alert = new AlertDialog.Builder(this);
-                    alert.SetTitle("Login fail");
-                    alert.SetMessage("Login or password doesn't exist.");
-                    Dialog dialog = alert.Create();
-                    dialog.Show();
+                    Toast.MakeText(this, "Email is required and with a valid format !", ToastLength.Short).Show();
+                    return;
                 }
+                if (psw.Text == null || psw.Text == "")
+                {
+                    Toast.MakeText(this, "Password is required !", ToastLength.Short).Show();
+                    return;
+                }
+                if (verif.Text != psw.Text)
+                {
+                    Toast.MakeText(this, "Your password isn't the same !", ToastLength.Short).Show();
+                    return;
+                }
+                User usr = new User { Id = localStorage.UserCount(), Pseudo = username.Text, Email = email.Text, Psw = psw.Text, Lists = localStorage.GetDefaultProject() };
+                localStorage.AddUser(usr);
+                Toast.MakeText(this, "Subscribe successful, " + usr.Pseudo, ToastLength.Short).Show();
+                StartActivity(new Intent(this, typeof(ProjectActivity)));
+                Finish();
             };
         }
     }

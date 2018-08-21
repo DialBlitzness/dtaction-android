@@ -2796,7 +2796,7 @@ namespace dtaction_android
 			public const int sub_psw = 2131230871;
 			
 			// aapt resource value: 0x7f080099
-			public const int sub_subscribe = 2131230873;
+			public const int sub_submit = 2131230873;
 			
 			// aapt resource value: 0x7f080094
 			public const int sub_title = 2131230868;

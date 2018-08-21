@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>21/08/2018 10:47:54</xs:documentation>
+    <xs:documentation>21/08/2018 12:07:24</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -92,6 +92,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -112,6 +115,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -546,6 +550,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -561,6 +567,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1010,6 +1019,8 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/action_settings" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
@@ -1149,6 +1160,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -1164,6 +1177,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1698,6 +1714,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -1713,6 +1731,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2224,6 +2245,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -2239,6 +2262,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2769,6 +2795,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -2789,6 +2818,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -3070,6 +3100,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -3085,6 +3117,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3596,6 +3631,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -3611,6 +3648,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4060,6 +4100,8 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/action_settings" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
@@ -4199,6 +4241,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -4214,6 +4258,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5157,6 +5204,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -5172,6 +5221,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5683,6 +5735,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -5698,6 +5752,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7249,6 +7306,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -7264,6 +7323,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7833,6 +7895,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -7848,6 +7912,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8359,6 +8426,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -8374,6 +8443,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8885,6 +8957,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -8900,6 +8974,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9411,6 +9488,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -9426,6 +9505,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9979,6 +10061,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -9994,6 +10078,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10505,6 +10592,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -10520,6 +10609,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11115,6 +11207,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -11130,6 +11224,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11621,6 +11718,8 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/action_settings" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
@@ -11707,6 +11806,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -11727,6 +11829,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -11855,6 +11958,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -11870,6 +11975,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -12452,6 +12560,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -12467,6 +12577,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12925,6 +13038,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -12945,6 +13061,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -13157,6 +13274,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -13172,6 +13291,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13630,6 +13752,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -13650,6 +13775,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -13862,6 +13988,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -13877,6 +14005,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14388,6 +14519,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -14403,6 +14536,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14852,6 +14988,8 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/action_settings" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
@@ -14941,6 +15079,8 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/action_settings" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
@@ -15512,6 +15652,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -15527,6 +15669,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15976,6 +16121,8 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/action_settings" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
@@ -16115,6 +16262,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -16130,6 +16279,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16579,6 +16731,8 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/action_settings" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
@@ -16718,6 +16872,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -16733,6 +16889,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17233,6 +17392,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -17253,6 +17415,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -17690,6 +17853,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -17705,6 +17870,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18154,6 +18322,8 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/action_settings" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
@@ -18282,6 +18452,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -18302,6 +18475,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -18736,6 +18910,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -18751,6 +18927,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19262,6 +19441,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -19277,6 +19458,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19958,6 +20142,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -19973,6 +20159,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20431,6 +20620,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -20451,6 +20643,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -20663,6 +20856,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -20678,6 +20873,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21201,6 +21399,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -21216,6 +21416,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21674,6 +21877,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -21694,6 +21900,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -21906,6 +22113,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -21921,6 +22130,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22822,6 +23034,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -22837,6 +23051,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23348,6 +23565,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -23363,6 +23582,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24031,6 +24253,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -24051,6 +24276,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -25785,6 +26011,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -25805,6 +26034,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -26017,6 +26247,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -26032,6 +26264,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26490,6 +26725,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -26510,6 +26748,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -26864,6 +27103,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -26884,6 +27126,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -28339,6 +28582,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -28354,6 +28599,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28812,6 +29060,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -28832,6 +29083,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -29044,6 +29296,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -29059,6 +29313,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29570,6 +29827,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -29585,6 +29844,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -30043,6 +30305,9 @@
             <xs:enumeration value="@color/bright_foreground_material_light" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
+            <xs:enumeration value="@color/colorAccent" />
+            <xs:enumeration value="@color/colorPrimary" />
+            <xs:enumeration value="@color/colorPrimaryDark" />
             <xs:enumeration value="@color/design_bottom_navigation_shadow_color" />
             <xs:enumeration value="@color/design_error" />
             <xs:enumeration value="@color/design_fab_shadow_end_color" />
@@ -30063,6 +30328,7 @@
             <xs:enumeration value="@color/foreground_material_light" />
             <xs:enumeration value="@color/highlighted_text_material_dark" />
             <xs:enumeration value="@color/highlighted_text_material_light" />
+            <xs:enumeration value="@color/ic_launcher_background" />
             <xs:enumeration value="@color/material_blue_grey_800" />
             <xs:enumeration value="@color/material_blue_grey_900" />
             <xs:enumeration value="@color/material_blue_grey_950" />
@@ -30336,6 +30602,8 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/logodta" />
+            <xs:enumeration value="@drawable/logodtq" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -30351,6 +30619,9 @@
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
+            <xs:enumeration value="@mipmap/ic_launcher" />
+            <xs:enumeration value="@mipmap/ic_launcher_foreground" />
+            <xs:enumeration value="@mipmap/ic_launcher_round" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
