@@ -62,6 +62,12 @@ namespace dtaction_android.Repository
             return item;
         }
 
+        internal static bool userAlreadyExist(string mail)
+        {
+            bool isExist = Users.Exists(item => item.Email == mail);
+            return isExist;
+        }
+
         static public void AddUser(User item)
         {
             Users.Add(item);

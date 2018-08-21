@@ -52,6 +52,11 @@ namespace dtaction_android
                     Toast.MakeText(this, "Your password isn't the same !", ToastLength.Short).Show();
                     return;
                 }
+                if (localStorage.userAlreadyExist(email.Text))
+                {
+                    Toast.MakeText(this, "This mail already exist !", ToastLength.Short).Show();
+                    return;
+                }
                 User usr = new User { Id = localStorage.UserCount(), Pseudo = username.Text, Email = email.Text, Psw = psw.Text, Lists = localStorage.GetDefaultProject() };
                 localStorage.AddUser(usr);
                 Toast.MakeText(this, "Subscribe successful, " + usr.Pseudo, ToastLength.Short).Show();
