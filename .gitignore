@@ -2,4 +2,5 @@
 .vs/dtaction-android/v15/Server/sqlite3/storage.ide-wal
 .vs/dtaction-android/v15/.suo
 dtaction-android/obj/Debug/build.props
-dtaction-android/obj/Debug/dtaction-android.csproj.CoreCompileInputs.cache
+dtaction-android/Resources/Resource.Designer.cs
+dtaction-android/bin/Debug/

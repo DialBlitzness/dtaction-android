@@ -10,27 +10,23 @@
         android:layout_height="match_parent">
         <ImageView
             android:gravity="center"
-            android:src="@drawable/logodta"
+            android:src="@drawable/logodtq"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/main_img" />
-        <TextView
-            android:text="DTAction"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_title"
-            android:gravity="center_horizontal"
-            android:freezesText="false" />
         <Button
             android:text="Subscribe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/main_subscribe" />
+            android:layout_marginTop="50px"
+            android:id="@+id/main_subscribe"
+            android:background="@drawable/EditTextStyle" />
         <Button
             android:text="Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/main_login" />
+            android:layout_marginTop="50px"
+            android:id="@+id/main_login"
+            android:background="@drawable/EditTextStyle" />
     </LinearLayout>
 </RelativeLayout>

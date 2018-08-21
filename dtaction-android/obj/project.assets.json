@@ -450,11 +450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diginamic\\Src\\dtaction-android\\dtaction-android\\dtaction-android.csproj",
+      "projectUniqueName": "C:\\Users\\Diginamic\\Documents\\Src\\dtaction-android\\dtaction-android\\dtaction-android.csproj",
       "projectName": "dtaction-android",
-      "projectPath": "C:\\Users\\Diginamic\\Src\\dtaction-android\\dtaction-android\\dtaction-android.csproj",
+      "projectPath": "C:\\Users\\Diginamic\\Documents\\Src\\dtaction-android\\dtaction-android\\dtaction-android.csproj",
       "packagesPath": "C:\\Users\\Diginamic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diginamic\\Src\\dtaction-android\\dtaction-android\\obj\\",
+      "outputPath": "C:\\Users\\Diginamic\\Documents\\Src\\dtaction-android\\dtaction-android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
