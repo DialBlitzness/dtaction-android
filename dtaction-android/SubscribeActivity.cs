@@ -15,7 +15,7 @@ using dtaction_android.Repository;
 
 namespace dtaction_android
 {
-    [Activity(Label = "InscriptionActivity")]
+    [Activity(Label = "InscriptionActivity", Theme = "@style/Theme.AppCompat.Light")]
     public class SubscribeActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -57,10 +57,13 @@ namespace dtaction_android
                     Toast.MakeText(this, "This mail already exist !", ToastLength.Short).Show();
                     return;
                 }
-                User usr = new User { Id = localStorage.UserCount(), Pseudo = username.Text, Email = email.Text, Psw = psw.Text, Lists = localStorage.GetDefaultProject() };
+                User usr = new User { Pseudo = username.Text, Email = email.Text, Psw = psw.Text };
                 localStorage.AddUser(usr);
                 Toast.MakeText(this, "Subscribe successful, " + usr.Pseudo, ToastLength.Short).Show();
-                StartActivity(new Intent(this, typeof(ProjectActivity)));
+                
+                var activity = new Intent(this, typeof(ProjectActivity));
+                activity.PutExtra("Id", usr.Id);
+                StartActivity(activity);
                 Finish();
             };
         }

@@ -1,2 +1,0 @@
-android.app.Application
-dtaction_android.dtaction_android

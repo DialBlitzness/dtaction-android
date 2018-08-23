@@ -9,18 +9,20 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace dtaction_android.Model
 {
     public class SingleList
     {
+        [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public string Title { get; set; }
-        public List<Task> Tasks { get; set; }
+        [Indexed]
+        public int UserId { get; set; }
 
         public SingleList()
         {
-            Tasks = new List<Task>();
         }
     }
 }

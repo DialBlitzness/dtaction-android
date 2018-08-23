@@ -1,0 +1,7 @@
+
+  <Button
+    android:text="Add New Task"
+    android:layout_marginTop="50px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/proj_menu_add" />

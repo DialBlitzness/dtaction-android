@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:id="@+id/proj_task_title"
-        android:text="Example"
+        android:id="@+id/proj_task_content"
         android:textSize="20sp"
         android:textColor="@android:color/black"
         android:layout_alignParentLeft="true"

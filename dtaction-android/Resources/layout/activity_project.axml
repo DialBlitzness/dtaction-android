@@ -16,5 +16,13 @@
     <ListView
         android:id="@+id/proj_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/proj_add"
+        android:text="+ ADD TASK"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
