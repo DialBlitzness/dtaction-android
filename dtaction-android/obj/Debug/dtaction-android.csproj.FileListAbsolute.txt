@@ -72,12 +72,12 @@ C:\Users\Diginamic\Documents\Src\dtaction-android\dtaction-android\obj\Debug\and
 C:\Users\Diginamic\Documents\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Diginamic\Documents\Src\dtaction-android\dtaction-android\obj\Debug\res\drawable\sublogo.png
 C:\Users\Diginamic\Documents\Src\dtaction-android\dtaction-android\obj\Debug\res\drawable\loginlogo.png
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.csproj.CoreCompileInputs.cache
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.dll
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction_android.dtaction_android.apk
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction_android.dtaction_android-Signed.apk
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.csprojAssemblyReference.cache
-C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.csproj.CoreCompileInputs.cache
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.dll
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\dtaction-android.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\bin\dtaction_android.dtaction_android.apk
@@ -116,7 +116,6 @@ C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\res\layout\ac
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\R.cs.flag
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\R.txt
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\uploadflags.txt
-C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.dll
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\Mono.Android.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\Mono.Data.Sqlite.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\mscorlib.pdb
@@ -153,4 +152,10 @@ C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\Syste
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\Microsoft.CSharp.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\System.Numerics.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\Mono.Security.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\dtaction-android.dll.mdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.dll.mdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\dtaction-android.dll.mdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\SQLite-net.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\SQLiteNetExtensions.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.dll
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\dtaction-android.dll.mdb

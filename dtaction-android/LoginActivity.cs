@@ -38,7 +38,7 @@ namespace dtaction_android
                 {
                     Toast.MakeText(this, "Login successful, "+usr.Pseudo, ToastLength.Short).Show();
                     var activity = new Intent(this, typeof(ProjectActivity));
-                    activity.PutExtra("Id", usr.Id);
+                    activity.PutExtra("IdUser", usr.Id);
                     StartActivity(activity);
                     Finish();
                 }

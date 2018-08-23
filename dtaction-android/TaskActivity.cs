@@ -18,24 +18,55 @@ namespace dtaction_android
     public class TaskActivity : Activity
     {
         SingleTask tsk;
+        SingleList lst;
+        User usr;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_task);
 
+            EditText content = FindViewById<EditText>(Resource.Id.task_content);
+            Button submit = FindViewById<Button>(Resource.Id.task_submit);
+            int usrId = Intent.GetIntExtra("IdUser", 0);
             bool edit = Intent.GetBooleanExtra("Edit", false);
+
             if(edit) {
-                int tskId = Intent.GetIntExtra("Id", 0);
+                int lstId = Intent.GetIntExtra("IdList", 0);
+                int tskId = Intent.GetIntExtra("IdTask", 0);
+                lst = localStorage.GetList(lstId);
                 tsk = localStorage.GetTask(tskId);
+                content.Text = tsk.Content;
             }
             else
             {
-                // Partie à changer pour gérer les ajouts
                 tsk = new SingleTask { Content = "", SingleListId = 0 };
             }
 
-            EditText content = FindViewById<EditText>(Resource.Id.task_content);
+            usr = localStorage.GetUser(usrId);
+
+            submit.Click += delegate
+            {
+                if (edit) {
+                    tsk.Content = content.Text;
+                    localStorage.UpdateTask(tsk);
+                } else {
+                    // A l'avenir, chercher la liste concernée, et ne pas rajouter à toutes les listes de l'user
+                    List<SingleList> myLists = localStorage.GetMyList(usr);
+                    foreach (SingleList item in myLists)
+                    {
+                        localStorage.AddTask(
+                            new SingleTask { Content = content.Text, SingleListId = item.Id }
+                        );
+                    };
+
+                }
+
+                var activity = new Intent(this, typeof(ProjectActivity));
+                activity.PutExtra("IdUser", usr.Id);
+                StartActivity(activity);
+                Finish();
+            };
         }
     }
 }

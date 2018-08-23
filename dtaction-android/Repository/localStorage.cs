@@ -42,6 +42,21 @@ namespace dtaction_android.Repository
             db.Insert(tsk, typeof(SingleTask));
         }
 
+        public static void UpdateUser(User usr)
+        {
+            db.Update(usr);
+        }
+
+        public static void UpdateList(SingleList lst)
+        {
+            db.Update(lst);
+        }
+
+        public static void UpdateTask(SingleTask tsk)
+        {
+            db.Update(tsk);
+        }
+
         public static void RemoveUser(User usr)
         {
             db.Delete<User>(usr.Id);

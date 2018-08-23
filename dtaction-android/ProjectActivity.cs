@@ -18,7 +18,6 @@ namespace dtaction_android
     [Activity(Label = "ProjectActivity", Theme = "@style/Theme.AppCompat.Light")]
     public class ProjectActivity : Activity
     {
-        EditText edtTask;
         TasksAdapter adapter;
         ListView lstTask;
         Button add;
@@ -33,65 +32,36 @@ namespace dtaction_android
             lstTask.Adapter = adapter;
         }
 
+        public void LoadListList()
+        {
+            myLists = localStorage.GetMyList(usr);
+            TextView lstListTitle = FindViewById<TextView>(Resource.Id.proj_title_list);
+
+            // Pour tester, à effacer
+            lstListTitle.Text = "List n°1";
+            // ajouter List adapter, et se servir de myLists
+        }
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            usr = localStorage.GetUser(Intent.GetIntExtra("Id", 0));
+            usr = localStorage.GetUser(Intent.GetIntExtra("IdUser", 0));
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_project);
             lstTask = FindViewById<ListView>(Resource.Id.proj_list);
+            
             add = FindViewById<Button>(Resource.Id.proj_add);
+            LoadListList();
             LoadTaskList();
 
             add.Click += delegate
             {
-                myLists = localStorage.GetMyList(usr);
-                foreach (SingleList item in myLists)
-                {
-                    localStorage.AddTask(
-                        new SingleTask { Content = "Add successful !", SingleListId = item.Id }
-                    );
-                };
+                var activity = new Intent(this, typeof(TaskActivity));
+                activity.PutExtra("IdUser", usr.Id);
+                activity.PutExtra("Edit", false);
+                StartActivity(activity);
+                Finish();
                 LoadTaskList();
             };
         }
-
-
-
-        /*
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Layout.activity_project_menu, menu);
-            return base.OnCreateOptionsMenu(menu);
-        }
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            switch (item.ItemId)
-            {
-                case Resource.Id.proj_menu_add:
-                    edtTask = new EditText(this);
-                    Android.Support.V7.App.AlertDialog alertDialog = new Android.Support.V7.App.AlertDialog.Builder(this)
-                        .SetTitle("Add New Task")
-                        .SetMessage("What do you want to do next ?")
-                        .SetView(edtTask)
-                        .SetPositiveButton("Add", OkAction)
-                        .SetNegativeButton("Cancel", CancelAction)
-                        .Create();
-                    alertDialog.Show();
-                    return true;
-            }
-            return base.OnOptionsItemSelected(item);
-        }
-
-        private void CancelAction(object sender, DialogClickEventArgs e)
-        {
-        }
-        private void OkAction(object sender, DialogClickEventArgs e)
-        {
-            SingleTask task = new SingleTask { Content = edtTask.Text };
-            localStorage.AddTask(task);
-            LoadTaskList();
-        }
-        */
     }
 }

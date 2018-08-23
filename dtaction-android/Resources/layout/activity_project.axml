@@ -13,6 +13,13 @@
         android:id="@+id/proj_title"
         android:gravity="center_horizontal"
         android:freezesText="false" />
+    <TextView
+        android:text="List"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proj_title_list"
+        android:freezesText="false" />
     <ListView
         android:id="@+id/proj_list"
         android:layout_width="match_parent"

@@ -54,9 +54,10 @@ namespace dtaction_android.Helpers
             };
             view.Click += delegate
             {
-                // Ca marche ! Taper du code ici
                 var activity2 = new Intent(activity, typeof(TaskActivity));
-                activity2.PutExtra("Id", taskList[position].Id);
+                activity2.PutExtra("IdTask", taskList[position].Id);
+                activity2.PutExtra("IdList", taskList[position].SingleListId);
+                activity2.PutExtra("IdUser", localStorage.GetList(taskList[position].SingleListId).UserId);
                 activity2.PutExtra("Edit", true);
                 activity.StartActivity(activity2);
                 activity.Finish();
