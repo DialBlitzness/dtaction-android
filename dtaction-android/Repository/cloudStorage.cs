@@ -42,7 +42,7 @@ namespace dtaction_android.Repository
                 localStorage.DeleteAllTables();
                 localStorage.CreateAllTables();
                 localStorage.CreateAllObjects(users, lists, tasks);
-                localStorage.WriteAll();
+                WriteAll();
             }
         }
 

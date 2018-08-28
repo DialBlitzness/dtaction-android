@@ -32,8 +32,8 @@ namespace dtaction_android
             login.Text = "";
             password.Text = "";
 
-            submit.Click += delegate {
-                User usr = localStorage.FindByLoginPsw(login.Text, password.Text);
+            submit.Click += async delegate {
+                User usr = await localStorage.FindByLoginPsw(login.Text, password.Text);
                 if (usr != null)
                 {
                     Toast.MakeText(this, "Login successful, "+usr.Pseudo, ToastLength.Short).Show();

@@ -24,17 +24,16 @@ namespace dtaction_android.Repository
 
         static localStorage()
         {
-            databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "DTActionData3.db");
+            databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "DTActionData10.db");
             db = new SQLiteConnection(databasePath);
 
-            // Test en ligne avec web api
             if (CheckInternet()) { cloudStorage.refresh(); }
-
-            // Test en local
-            /*
-            CreateAllDatasForTest();
-            WriteAll();
-            */
+            else
+            {
+                // Test en local
+                CreateAllDatasForTest();
+                WriteAll();
+            }
         }
 
         public static async void AddUser(User usr)
@@ -261,9 +260,27 @@ namespace dtaction_android.Repository
             }
         }
 
-        static public User FindByLoginPsw(string txt, string psw)
+        static public async Task<User> FindByLoginPsw(string txt, string psw)
         {
-            if (CheckInternet()) { cloudStorage.refresh(); }
+            if (CheckInternet())
+            {
+                var client = new HttpClient();
+                string result2;
+                // tout récupérer avec des GET 
+                result2 = await client.GetStringAsync("http://dtaction.azurewebsites.net/api/task");
+                List<SingleTask> tasks = JsonConvert.DeserializeObject<List<SingleTask>>(result2);
+
+                result2 = await client.GetStringAsync("http://dtaction.azurewebsites.net/api/list");
+                List<SingleList> lists = JsonConvert.DeserializeObject<List<SingleList>>(result2);
+
+                result2 = await client.GetStringAsync("http://dtaction.azurewebsites.net/api/user");
+                List<User> users = JsonConvert.DeserializeObject<List<User>>(result2);
+
+                // Puis traitement SQLite en local
+                DeleteAllTables();
+                CreateAllTables();
+                CreateAllObjects(users, lists, tasks);
+            }
             User result = db.Query<User>("select * from User where (Pseudo = ? or Email = ?) and Psw = ?", new string[3] { txt, txt, psw }).FirstOrDefault();
             return result;
         }

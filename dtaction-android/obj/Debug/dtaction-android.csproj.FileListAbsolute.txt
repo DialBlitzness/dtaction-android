@@ -166,3 +166,5 @@ C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\Syste
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.IO.Compression.FileSystem.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.IO.Compression.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.Web.Services.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.dll
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\dtaction-android.dll.mdb
