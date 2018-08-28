@@ -4,21 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:text="Task"
+        android:text="New task"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/task_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
         android:gravity="center_horizontal"
         android:freezesText="false" />
     <EditText
         android:id="@+id/task_content"
+        android:layout_marginTop="45px"
         android:hint="Write here..."
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
     <Button
         android:text="Submit"
         android:layout_width="match_parent"
+        android:layout_marginTop="45px"
         android:layout_height="wrap_content"
+        android:background="@drawable/EditTextStyle"
         android:id="@+id/task_submit" />
+    <Button
+        android:text="Cancel"
+        android:layout_width="match_parent"
+        android:layout_marginTop="45px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/EditTextStyle"
+        android:id="@+id/task_cancel" />
 </LinearLayout>

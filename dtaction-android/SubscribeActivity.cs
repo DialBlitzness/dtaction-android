@@ -26,6 +26,7 @@ namespace dtaction_android
             SetContentView(Resource.Layout.activity_subscribe);
 
             Button submit = FindViewById<Button>(Resource.Id.sub_submit);
+            Button cancel = FindViewById<Button>(Resource.Id.sub_cancel);
             EditText username = FindViewById<EditText>(Resource.Id.sub_username);
             EditText email = FindViewById<EditText>(Resource.Id.sub_email);
             EditText psw = FindViewById<EditText>(Resource.Id.sub_psw);
@@ -62,6 +63,13 @@ namespace dtaction_android
                 Toast.MakeText(this, "Subscribe successful, " + usr.Pseudo, ToastLength.Short).Show();
 
                 var activity = new Intent(this, typeof(LoginActivity));
+                StartActivity(activity);
+                Finish();
+            };
+
+            cancel.Click += delegate
+            {
+                var activity = new Intent(this, typeof(MainActivity));
                 StartActivity(activity);
                 Finish();
             };

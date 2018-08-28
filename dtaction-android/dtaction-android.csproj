@@ -164,6 +164,8 @@
     <AndroidResource Include="Resources\layout\activity_task.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\deletelogo.png" />
+    <AndroidResource Include="Resources\drawable\decoo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

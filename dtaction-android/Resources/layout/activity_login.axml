@@ -18,8 +18,7 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:gravity="center"
-        android:layout_height="wrap_content"
-        android:background="@drawable/EditTextStyle" />
+        android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/log_psw"
         android:hint="Password"
@@ -30,12 +29,19 @@
         android:paddingBottom="10dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:background="@drawable/EditTextStyle" />
+        android:inputType="textPassword" />
     <Button
         android:text="Submit"
         android:layout_marginTop="50px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/EditTextStyle"
         android:id="@+id/log_submit" />
+    <Button
+        android:text="Cancel"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/EditTextStyle"
+        android:id="@+id/log_cancel" />
 </LinearLayout>

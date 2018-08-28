@@ -29,6 +29,8 @@ namespace dtaction_android
             Button submit = FindViewById<Button>(Resource.Id.log_submit);
             EditText login = FindViewById<EditText>(Resource.Id.log_login);
             EditText password = FindViewById<EditText>(Resource.Id.log_psw);
+            Button cancel = FindViewById<Button>(Resource.Id.log_cancel);
+
             login.Text = "";
             password.Text = "";
 
@@ -50,6 +52,13 @@ namespace dtaction_android
                     Dialog dialog = alert.Create();
                     dialog.Show();
                 }
+            };
+
+            cancel.Click += delegate
+            {
+                var activity = new Intent(this, typeof(MainActivity));
+                StartActivity(activity);
+                Finish();
             };
         }
     }

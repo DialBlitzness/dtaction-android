@@ -50,7 +50,8 @@ namespace dtaction_android
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_project);
             lstTask = FindViewById<ListView>(Resource.Id.proj_list);
-            
+            ImageView decobutton = FindViewById<ImageView>(Resource.Id.proj_img);
+
             add = FindViewById<Button>(Resource.Id.proj_add);
             LoadTaskList();
 
@@ -68,6 +69,14 @@ namespace dtaction_android
             refresher.Refresh += delegate {
                 LoadTaskList();
                 refresher.Refreshing = false;
+            };
+
+            decobutton.Click += delegate
+            {
+                var activity = new Intent(this, typeof(MainActivity));
+                StartActivity(activity);
+                Finish();
+                LoadTaskList();
             };
         }
     }

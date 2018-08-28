@@ -24,6 +24,10 @@ namespace dtaction_android
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
+		public static void UpdateIdValues()
+		{
+		}
+		
 		public partial class Animation
 		{
 			
@@ -1800,16 +1804,22 @@ namespace dtaction_android
 			public const int abc_vector_test = 2131296339;
 			
 			// aapt resource value: 0x7F010002
-			public const int EditTextStyle = 2130771970;
+			public const int decoo = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int loginlogo = 2130771971;
+			public const int deletelogo = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int logodta = 2130771972;
+			public const int EditTextStyle = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int logodtq = 2130771973;
+			public const int loginlogo = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int logodta = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int logodtq = 2130771975;
 			
 			// aapt resource value: 0x7F090001
 			public const int notification_action_background = 2131296257;
@@ -1847,8 +1857,8 @@ namespace dtaction_android
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010006
-			public const int sublogo = 2130771974;
+			// aapt resource value: 0x7F010008
+			public const int sublogo = 2130771976;
 			
 			// aapt resource value: 0x7F090060
 			public const int tooltip_frame_dark = 2131296352;
@@ -2019,6 +2029,9 @@ namespace dtaction_android
 			// aapt resource value: 0x7F020002
 			public const int login_img = 2130837506;
 			
+			// aapt resource value: 0x7F020006
+			public const int log_cancel = 2130837510;
+			
 			// aapt resource value: 0x7F020003
 			public const int log_login = 2130837507;
 			
@@ -2028,14 +2041,14 @@ namespace dtaction_android
 			// aapt resource value: 0x7F020005
 			public const int log_submit = 2130837509;
 			
-			// aapt resource value: 0x7F020006
-			public const int main_img = 2130837510;
+			// aapt resource value: 0x7F020007
+			public const int main_img = 2130837511;
+			
+			// aapt resource value: 0x7F020009
+			public const int main_login = 2130837513;
 			
 			// aapt resource value: 0x7F020008
-			public const int main_login = 2130837512;
-			
-			// aapt resource value: 0x7F020007
-			public const int main_subscribe = 2130837511;
+			public const int main_subscribe = 2130837512;
 			
 			// aapt resource value: 0x7F0C0013
 			public const int media_actions = 2131492883;
@@ -2070,29 +2083,32 @@ namespace dtaction_android
 			// aapt resource value: 0x7F0C0037
 			public const int progress_horizontal = 2131492919;
 			
-			// aapt resource value: 0x7F020013
-			public const int proj_add = 2130837523;
+			// aapt resource value: 0x7F020015
+			public const int proj_add = 2130837525;
 			
 			// aapt resource value: 0x7F020012
-			public const int proj_list = 2130837522;
+			public const int proj_img = 2130837522;
 			
 			// aapt resource value: 0x7F020014
-			public const int proj_task_content = 2130837524;
+			public const int proj_list = 2130837524;
 			
-			// aapt resource value: 0x7F020015
-			public const int proj_task_delete = 2130837525;
+			// aapt resource value: 0x7F020016
+			public const int proj_task_content = 2130837526;
 			
-			// aapt resource value: 0x7F020010
-			public const int proj_title = 2130837520;
+			// aapt resource value: 0x7F020017
+			public const int proj_task_delete = 2130837527;
 			
 			// aapt resource value: 0x7F020011
-			public const int proj_title_list = 2130837521;
+			public const int proj_title = 2130837521;
+			
+			// aapt resource value: 0x7F020013
+			public const int proj_title_list = 2130837523;
 			
 			// aapt resource value: 0x7F0C0038
 			public const int radio = 2131492920;
 			
-			// aapt resource value: 0x7F020009
-			public const int refresher = 2130837513;
+			// aapt resource value: 0x7F020010
+			public const int refresher = 2130837520;
 			
 			// aapt resource value: 0x7F0C0014
 			public const int right_icon = 2131492884;
@@ -2166,29 +2182,32 @@ namespace dtaction_android
 			// aapt resource value: 0x7F0C001A
 			public const int status_bar_latest_event_content = 2131492890;
 			
+			// aapt resource value: 0x7F020018
+			public const int sublogo = 2130837528;
+			
 			// aapt resource value: 0x7F0C0050
 			public const int submenuarrow = 2131492944;
 			
 			// aapt resource value: 0x7F0C0051
 			public const int submit_area = 2131492945;
 			
-			// aapt resource value: 0x7F020018
-			public const int sub_email = 2130837528;
-			
-			// aapt resource value: 0x7F020019
-			public const int sub_psw = 2130837529;
-			
-			// aapt resource value: 0x7F020021
-			public const int sub_submit = 2130837537;
-			
-			// aapt resource value: 0x7F020016
-			public const int sub_title = 2130837526;
-			
-			// aapt resource value: 0x7F020017
-			public const int sub_username = 2130837527;
+			// aapt resource value: 0x7F020024
+			public const int sub_cancel = 2130837540;
 			
 			// aapt resource value: 0x7F020020
-			public const int sub_verif = 2130837536;
+			public const int sub_email = 2130837536;
+			
+			// aapt resource value: 0x7F020021
+			public const int sub_psw = 2130837537;
+			
+			// aapt resource value: 0x7F020023
+			public const int sub_submit = 2130837539;
+			
+			// aapt resource value: 0x7F020019
+			public const int sub_username = 2130837529;
+			
+			// aapt resource value: 0x7F020022
+			public const int sub_verif = 2130837538;
 			
 			// aapt resource value: 0x7F0C0052
 			public const int tabMode = 2131492946;
@@ -2196,14 +2215,17 @@ namespace dtaction_android
 			// aapt resource value: 0x7F0C0016
 			public const int tag_transition_group = 2131492886;
 			
-			// aapt resource value: 0x7F020023
-			public const int task_content = 2130837539;
+			// aapt resource value: 0x7F020028
+			public const int task_cancel = 2130837544;
 			
-			// aapt resource value: 0x7F020024
-			public const int task_submit = 2130837540;
+			// aapt resource value: 0x7F020026
+			public const int task_content = 2130837542;
 			
-			// aapt resource value: 0x7F020022
-			public const int task_title = 2130837538;
+			// aapt resource value: 0x7F020027
+			public const int task_submit = 2130837543;
+			
+			// aapt resource value: 0x7F020025
+			public const int task_title = 2130837541;
 			
 			// aapt resource value: 0x7F0C0017
 			public const int text = 2131492887;

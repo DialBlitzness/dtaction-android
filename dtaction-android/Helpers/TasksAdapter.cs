@@ -43,8 +43,8 @@ namespace dtaction_android.Helpers
             LayoutInflater inflater = (LayoutInflater)activity.GetSystemService(Context.LayoutInflaterService);
             View view = inflater.Inflate(Resource.Layout.activity_project_task, null);
             TextView txtTask = view.FindViewById<TextView>(Resource.Id.proj_task_content);
-            Button btnDelete = view.FindViewById<Button>(Resource.Id.proj_task_delete);
-            txtTask.Text = taskList[position].Content+" id:"+taskList[position].Id+" pos:"+position;
+            ImageView btnDelete = view.FindViewById<ImageView>(Resource.Id.proj_task_delete);
+            txtTask.Text = taskList[position].Content;
 
             btnDelete.Click += delegate
             {

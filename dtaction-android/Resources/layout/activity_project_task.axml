@@ -4,17 +4,17 @@
     android:layout_height="match_parent">
     <TextView
         android:id="@+id/proj_task_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textColor="@android:color/black"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:paddingLeft="30px"
+        android:paddingRight="45px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <Button
+    <ImageView
         android:id="@+id/proj_task_delete"
-        android:text="DEL"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
+        android:src="@drawable/deletelogo"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"

@@ -3,21 +3,21 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:text="Subscribe"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="fill_parent"
+    <ImageView
+        android:gravity="center"
+        android:src="@drawable/sublogo"
         android:layout_height="wrap_content"
-        android:id="@+id/sub_title"
-        android:gravity="center_horizontal"
-        android:freezesText="false" />
+        android:layout_width="match_parent"
+        android:id="@+id/sublogo" />
     <EditText
         android:id="@+id/sub_username"
         android:hint="Username"
+        android:layout_marginTop="15px"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/sub_email"
+        android:layout_marginTop="15px"
         android:hint="Email"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
@@ -29,11 +29,21 @@
     <EditText
         android:id="@+id/sub_verif"
         android:hint="Confirm password"
+        android:layout_marginTop="15px"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
     <Button
         android:text="Submit"
         android:layout_width="match_parent"
+        android:layout_marginTop="20px"
         android:layout_height="wrap_content"
+        android:background="@drawable/EditTextStyle"
         android:id="@+id/sub_submit" />
+    <Button
+        android:text="Cancel"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/EditTextStyle"
+        android:id="@+id/sub_cancel" />
 </LinearLayout>

@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>28/08/2018 15:55:53</xs:documentation>
+    <xs:documentation>28/08/2018 17:27:11</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -152,6 +152,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -748,6 +750,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -1273,6 +1277,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -1941,6 +1947,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -2623,6 +2631,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -3190,6 +3200,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -3715,6 +3727,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -4240,6 +4254,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -4765,6 +4781,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -5290,6 +5308,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -5928,6 +5948,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -6877,6 +6899,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -7414,6 +7438,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -8052,6 +8078,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -8577,6 +8605,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -9267,6 +9297,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -9804,6 +9836,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -10501,6 +10535,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -11340,6 +11376,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -13167,6 +13205,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -13864,6 +13904,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />
@@ -14580,6 +14622,8 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/decoo" />
+            <xs:enumeration value="@drawable/deletelogo" />
             <xs:enumeration value="@drawable/edittextstyle" />
             <xs:enumeration value="@drawable/loginlogo" />
             <xs:enumeration value="@drawable/logodta" />

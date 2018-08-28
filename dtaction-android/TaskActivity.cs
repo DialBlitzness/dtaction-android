@@ -28,6 +28,7 @@ namespace dtaction_android
 
             EditText content = FindViewById<EditText>(Resource.Id.task_content);
             Button submit = FindViewById<Button>(Resource.Id.task_submit);
+            Button cancel = FindViewById<Button>(Resource.Id.task_cancel);
             int usrId = Intent.GetIntExtra("IdUser", 0);
             bool edit = Intent.GetBooleanExtra("Edit", false);
 
@@ -58,6 +59,14 @@ namespace dtaction_android
                     );
                 }
 
+                var activity = new Intent(this, typeof(ProjectActivity));
+                activity.PutExtra("IdUser", usr.Id);
+                StartActivity(activity);
+                Finish();
+            };
+
+            cancel.Click += delegate
+            {
                 var activity = new Intent(this, typeof(ProjectActivity));
                 activity.PutExtra("IdUser", usr.Id);
                 StartActivity(activity);
