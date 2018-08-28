@@ -18,7 +18,7 @@ namespace dtaction_android
     [Activity(Label = "ProjectActivity", Theme = "@style/Theme.AppCompat.Light")]
     public class ProjectActivity : Activity
     {
-        TasksAdapter adapter;
+        TasksAdapter taskAdapter;
         ListView lstTask;
         Button add;
         User usr;
@@ -27,30 +27,30 @@ namespace dtaction_android
 
         public void LoadTaskList()
         {
-            myTasks = localStorage.GetMyTask(usr);
-            adapter = new TasksAdapter(this, localStorage.GetMyTask(usr));
-            lstTask.Adapter = adapter;
+            LoadListList();
+            myTasks = localStorage.GetMyTask(myLists.FirstOrDefault());
+            taskAdapter = new TasksAdapter(this, myTasks);
+            lstTask.Adapter = taskAdapter;
         }
 
         public void LoadListList()
         {
             myLists = localStorage.GetMyList(usr);
+            SingleList myList = myLists.FirstOrDefault();
+            
             TextView lstListTitle = FindViewById<TextView>(Resource.Id.proj_title_list);
-
-            // Pour tester, à effacer
-            lstListTitle.Text = "List n°1";
-            // ajouter List adapter, et se servir de myLists
+            lstListTitle.Text = myList.Title;
         }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            usr = localStorage.GetUser(Intent.GetIntExtra("IdUser", 0));
+            int idUser = Intent.GetIntExtra("IdUser", 0);
+            usr = localStorage.GetUser(idUser);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_project);
             lstTask = FindViewById<ListView>(Resource.Id.proj_list);
             
             add = FindViewById<Button>(Resource.Id.proj_add);
-            LoadListList();
             LoadTaskList();
 
             add.Click += delegate

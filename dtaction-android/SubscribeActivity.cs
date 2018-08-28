@@ -60,9 +60,8 @@ namespace dtaction_android
                 User usr = new User { Pseudo = username.Text, Email = email.Text, Psw = psw.Text };
                 localStorage.AddUser(usr);
                 Toast.MakeText(this, "Subscribe successful, " + usr.Pseudo, ToastLength.Short).Show();
-                
-                var activity = new Intent(this, typeof(ProjectActivity));
-                activity.PutExtra("IdUser", usr.Id);
+
+                var activity = new Intent(this, typeof(LoginActivity));
                 StartActivity(activity);
                 Finish();
             };

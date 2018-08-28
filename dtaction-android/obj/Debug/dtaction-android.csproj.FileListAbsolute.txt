@@ -157,5 +157,12 @@ C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-andr
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\dtaction-android.dll.mdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\SQLite-net.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\SQLiteNetExtensions.pdb
-C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.dll
-C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\dtaction-android.dll.mdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\System.IO.Compression.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\System.IO.Compression.FileSystem.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\System.Web.Services.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\System.IO.Compression.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\System.IO.Compression.FileSystem.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\System.Web.Services.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.IO.Compression.FileSystem.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.IO.Compression.pdb
+C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.Web.Services.pdb

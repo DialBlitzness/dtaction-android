@@ -40,7 +40,7 @@ namespace dtaction_android
             }
             else
             {
-                tsk = new SingleTask { Content = "", SingleListId = 0 };
+                tsk = new SingleTask { Content = "", IdList = 0 };
             }
 
             usr = localStorage.GetUser(usrId);
@@ -53,13 +53,9 @@ namespace dtaction_android
                 } else {
                     // A l'avenir, chercher la liste concernée, et ne pas rajouter à toutes les listes de l'user
                     List<SingleList> myLists = localStorage.GetMyList(usr);
-                    foreach (SingleList item in myLists)
-                    {
-                        localStorage.AddTask(
-                            new SingleTask { Content = content.Text, SingleListId = item.Id }
-                        );
-                    };
-
+                    localStorage.AddTask(
+                        new SingleTask { Content = content.Text, IdList = myLists.First().Id, Position = myLists.First().LastPosition() }
+                    );
                 }
 
                 var activity = new Intent(this, typeof(ProjectActivity));

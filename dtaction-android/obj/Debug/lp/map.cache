@@ -25,3 +25,4 @@ Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 System.Reflection.Extensions
 System.Resources.ResourceManager
+netstandard

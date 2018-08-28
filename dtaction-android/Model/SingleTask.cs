@@ -17,8 +17,10 @@ namespace dtaction_android.Model
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+        [MaxLength(200)]
         public string Content { get; set; }
+        public int Position { get; set; }
         [Indexed]
-        public int SingleListId { get; set; }
+        public int IdList { get; set; }
     }
 }

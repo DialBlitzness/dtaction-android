@@ -45,7 +45,7 @@ namespace dtaction_android.Helpers
             TextView txtTask = view.FindViewById<TextView>(Resource.Id.proj_task_content);
             Button btnDelete = view.FindViewById<Button>(Resource.Id.proj_task_delete);
             txtTask.Text = taskList[position].Content;
-            // A changer pour mettre la suppression des tasks sur la base de données
+
             btnDelete.Click += delegate
             {
                 SingleTask task = taskList[position];
@@ -56,8 +56,8 @@ namespace dtaction_android.Helpers
             {
                 var activity2 = new Intent(activity, typeof(TaskActivity));
                 activity2.PutExtra("IdTask", taskList[position].Id);
-                activity2.PutExtra("IdList", taskList[position].SingleListId);
-                activity2.PutExtra("IdUser", localStorage.GetList(taskList[position].SingleListId).UserId);
+                activity2.PutExtra("IdList", taskList[position].IdList);
+                activity2.PutExtra("IdUser", localStorage.GetList(taskList[position].IdList).IdUser);
                 activity2.PutExtra("Edit", true);
                 activity.StartActivity(activity2);
                 activity.Finish();
