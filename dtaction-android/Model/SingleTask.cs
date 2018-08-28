@@ -15,7 +15,7 @@ namespace dtaction_android.Model
 {
     public class SingleTask
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int Id { get; set; }
         [MaxLength(200)]
         public string Content { get; set; }

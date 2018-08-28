@@ -44,7 +44,7 @@ namespace dtaction_android.Helpers
             View view = inflater.Inflate(Resource.Layout.activity_project_task, null);
             TextView txtTask = view.FindViewById<TextView>(Resource.Id.proj_task_content);
             Button btnDelete = view.FindViewById<Button>(Resource.Id.proj_task_delete);
-            txtTask.Text = taskList[position].Content;
+            txtTask.Text = taskList[position].Content+" id:"+taskList[position].Id+" pos:"+position;
 
             btnDelete.Click += delegate
             {

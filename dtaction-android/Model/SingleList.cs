@@ -16,7 +16,7 @@ namespace dtaction_android.Model
 {
     public class SingleList
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int Id { get; set; }
         [MaxLength(40)]
         public string Title { get; set; }
@@ -26,11 +26,6 @@ namespace dtaction_android.Model
 
         public SingleList()
         {
-        }
-
-        public int LastPosition()
-        {
-            return localStorage.GetMyTask(Id).Count + 1;
         }
     }
 }

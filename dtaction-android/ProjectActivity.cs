@@ -7,6 +7,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V4.Widget;
 using Android.Views;
 using Android.Widget;
 using dtaction_android.Helpers;
@@ -28,7 +29,7 @@ namespace dtaction_android
         public void LoadTaskList()
         {
             LoadListList();
-            myTasks = localStorage.GetMyTask(myLists.FirstOrDefault());
+            myTasks = localStorage.GetMyTask(myLists.FirstOrDefault().Id);
             taskAdapter = new TasksAdapter(this, myTasks);
             lstTask.Adapter = taskAdapter;
         }
@@ -61,6 +62,12 @@ namespace dtaction_android
                 StartActivity(activity);
                 Finish();
                 LoadTaskList();
+            };
+
+            SwipeRefreshLayout refresher = FindViewById<SwipeRefreshLayout>(Resource.Id.refresher);
+            refresher.Refresh += delegate {
+                LoadTaskList();
+                refresher.Refreshing = false;
             };
         }
     }

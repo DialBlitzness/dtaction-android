@@ -16,7 +16,7 @@ namespace dtaction_android.Model
     [Table("User")]
     public class User
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int Id { get; set; }
         [MaxLength(20)]
         public string Pseudo { get; set; }

@@ -45,16 +45,16 @@ namespace dtaction_android
 
             usr = localStorage.GetUser(usrId);
 
-            submit.Click += delegate
+            submit.Click += async delegate
             {
                 if (edit) {
                     tsk.Content = content.Text;
                     localStorage.UpdateTask(tsk);
                 } else {
-                    // A l'avenir, chercher la liste concernée, et ne pas rajouter à toutes les listes de l'user
+                    // A l'avenir, chercher la liste concernée, et ne pas rajouter à la première liste de l'user
                     List<SingleList> myLists = localStorage.GetMyList(usr);
-                    localStorage.AddTask(
-                        new SingleTask { Content = content.Text, IdList = myLists.First().Id, Position = myLists.First().LastPosition() }
+                    await localStorage.AddTask(
+                        new SingleTask { Content = content.Text, IdList = myLists.First().Id }
                     );
                 }
 

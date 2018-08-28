@@ -24,7 +24,7 @@ namespace dtaction_android.Repository
 
         static localStorage()
         {
-            databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "DTActionData10.db");
+            databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "DTActionData18.db");
             db = new SQLiteConnection(databasePath);
 
             if (CheckInternet()) { cloudStorage.refresh(); }
@@ -38,11 +38,19 @@ namespace dtaction_android.Repository
 
         public static async void AddUser(User usr)
         {
-            db.Insert(usr, typeof(User));
             if (CheckInternet())
             {
                 using (HttpClient webAPI = new HttpClient())
                 {
+                    string result;
+                    result = await webAPI.GetStringAsync("http://dtaction.azurewebsites.net/api/getlastuser");
+                    User obj = JsonConvert.DeserializeObject<User>(result);
+
+                    int newId = obj.Id + 1;
+                    usr.Id = newId;
+
+                    db.Insert(usr, typeof(User));
+
                     webAPI.MaxResponseContentBufferSize = 256000;
                     string json = Newtonsoft.Json.JsonConvert.SerializeObject(usr);
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -63,11 +71,23 @@ namespace dtaction_android.Repository
 
         public static async void AddList(SingleList lst)
         {
-            db.Insert(lst, typeof(SingleList));
             if (CheckInternet())
             {
                 using (HttpClient webAPI = new HttpClient())
                 {
+                    string result;
+                    result = await webAPI.GetStringAsync("http://dtaction.azurewebsites.net/api/getlastlist");
+                    SingleList obj = JsonConvert.DeserializeObject<SingleList>(result);
+
+                    int newId = obj.Id + 1;
+                    lst.Id = newId;
+
+                    if (GetAllList() == null || GetAllList().Count == 0)
+                        lst.Position = 0;
+                    else lst.Position = GetAllList().LastOrDefault().Position + 1;
+
+                    db.Insert(lst, typeof(SingleList));
+
                     webAPI.MaxResponseContentBufferSize = 256000;
                     string json = Newtonsoft.Json.JsonConvert.SerializeObject(lst);
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -86,13 +106,24 @@ namespace dtaction_android.Repository
             }
         }
 
-        public static async void AddTask(SingleTask tsk)
+        public static async Task AddTask(SingleTask tsk)
         {
-            db.Insert(tsk, typeof(SingleTask));
             if (CheckInternet())
             {
                 using (HttpClient webAPI = new HttpClient())
                 {
+                    string result;
+                    result = await webAPI.GetStringAsync("http://dtaction.azurewebsites.net/api/getlasttask");
+                    SingleTask obj = JsonConvert.DeserializeObject<SingleTask>(result);
+
+                    int newId = obj.Id + 1;
+                    int newPosition = GetAllTask().LastOrDefault().Position + 1;
+                    tsk.Id = newId;
+                    tsk.Position = newPosition;
+                    Console.WriteLine("AddTask : on ajoute la task d'id " + tsk.Id);
+                    
+                    db.Insert(tsk, typeof(SingleTask));
+
                     webAPI.MaxResponseContentBufferSize = 256000;
                     string json = Newtonsoft.Json.JsonConvert.SerializeObject(tsk);
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -235,21 +266,19 @@ namespace dtaction_android.Repository
                     }
                 }
             }
-
         }
 
         public static async void RemoveTask(SingleTask tsk)
         {
             db.Delete<SingleTask>(tsk.Id);
+            Console.WriteLine("RemoveTask : on supprime la task d'id " + tsk.Id);
             if (CheckInternet())
             {
                 using (HttpClient webAPI = new HttpClient())
                 {
-                    webAPI.MaxResponseContentBufferSize = 256000;
-                    HttpResponseMessage response;
                     try
                     {
-                        response = await webAPI.DeleteAsync("http://dtaction.azurewebsites.net/api/task/" + tsk.Id);
+                        var response = await webAPI.DeleteAsync("http://dtaction.azurewebsites.net/api/task/" + tsk.Id);
                     }
                     catch (Exception err)
                     {
@@ -322,28 +351,8 @@ namespace dtaction_android.Repository
             return lst;
         }
 
-        static public List<SingleTask> GetMyTask(User usr)
-        {
-            List<SingleList> lst = db.Query<SingleList>("select * from SingleList where IdUser = ?", usr.Id).ToList();
-            List<SingleTask> tsk = new List<SingleTask>();
-            foreach(SingleList item1 in lst)
-            {
-                List<SingleTask> tmp = db.Query<SingleTask>("select * from SingleTask where IdList = ?", item1.Id).ToList();
-                foreach(SingleTask item2 in tmp) { tsk.Add(item2); }
-            }
-            return tsk;
-        }
-
-        static public List<SingleTask> GetMyTask(SingleList lst)
-        {
-            if ((db.Query<SingleTask>("select * from SingleTask where IdList = ?", lst.Id).FirstOrDefault()) == null) { AddTask(new SingleTask { Content = "First task", IdList = lst.Id }); };
-            List<SingleTask> tsk = db.Query<SingleTask>("select * from SingleTask where IdList = ?", lst.Id).ToList();
-            return tsk;
-        }
-
         static public List<SingleTask> GetMyTask(int lstId)
         {
-            if ((db.Query<SingleTask>("select * from SingleTask where IdList = ?", lstId).FirstOrDefault()) == null) { AddTask(new SingleTask { Content = "First task", IdList = lstId }); };
             List<SingleTask> tsk = db.Query<SingleTask>("select * from SingleTask where IdList = ?", lstId).ToList();
             return tsk;
         }
