@@ -181,5 +181,3 @@ C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\asset
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.Web.Services.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\android\assets\System.Xml.pdb
-C:\Users\Diginamic\Src\dtaction-android\dtaction-android\bin\Debug\dtaction-android.dll
-C:\Users\Diginamic\Src\dtaction-android\dtaction-android\obj\Debug\linksrc\dtaction-android.dll.mdb

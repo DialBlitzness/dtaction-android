@@ -34,6 +34,14 @@ namespace dtaction_android
             lstTask.Adapter = taskAdapter;
         }
 
+        public async void LoadTaskCloudList()
+        {
+            LoadListList();
+            myTasks = await localStorage.GetMyTaskCloud(myLists.FirstOrDefault().Id);
+            taskAdapter = new TasksAdapter(this, myTasks);
+            lstTask.Adapter = taskAdapter;
+        }
+
         public void LoadListList()
         {
             myLists = localStorage.GetMyList(usr);
@@ -67,7 +75,7 @@ namespace dtaction_android
 
             SwipeRefreshLayout refresher = FindViewById<SwipeRefreshLayout>(Resource.Id.refresher);
             refresher.Refresh += delegate {
-                LoadTaskList();
+                LoadTaskCloudList();
                 refresher.Refreshing = false;
             };
 

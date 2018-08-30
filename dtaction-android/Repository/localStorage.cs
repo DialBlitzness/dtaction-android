@@ -357,6 +357,17 @@ namespace dtaction_android.Repository
             return tsk;
         }
 
+        static public async Task<List<SingleTask>> GetMyTaskCloud(int lstId)
+        {
+            var client = new HttpClient();
+            string result = await client.GetStringAsync("http://dtaction.azurewebsites.net/api/task");
+            List<SingleTask> tasks = JsonConvert.DeserializeObject<List<SingleTask>>(result);
+            db.DropTable<SingleTask>();
+            db.CreateTable<SingleTask>();
+            foreach (SingleTask item in tasks) { db.Insert(item, typeof(SingleTask)); }
+            return GetMyTask(lstId);
+        }
+
         static public bool userAlreadyExist(string mail)
         {
             bool isExist = true;
