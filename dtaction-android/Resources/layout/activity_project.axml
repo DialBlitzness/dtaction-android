@@ -41,6 +41,8 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
             android:background="@drawable/EditTextStyle"
             android:layout_marginBottom="50px"
             android:id="@+id/proj_title_list"
